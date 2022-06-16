@@ -1,0 +1,17 @@
+.small_card div {
+  width: 350px;
+  height: 257px;
+  border-radius: 18px;
+  border: 1px solid #acacac;
+  position: relative;
+  background-image: url(../../Images/iphone-13-mini-2021_edited_edited.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.small_card i {
+  color: #ffd300;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}

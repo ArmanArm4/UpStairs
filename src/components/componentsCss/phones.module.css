@@ -1,0 +1,16 @@
+.cards {
+  display: flex;
+  gap: 67px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.inner_carousel {
+  display: flex;
+  gap: 24px;
+}
+.carousel {
+  overflow: hidden;
+}
+.carousel:active {
+  cursor: grabbing;
+}

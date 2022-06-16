@@ -1,0 +1,68 @@
+nav {
+  background-color: #360ccd;
+  color: #fefff3;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 80px;
+}
+.logo {
+  background-image: url(../../Images/Logo.png);
+  aspect-ratio: 1.677/1;
+  height: 65px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  gap: 74px;
+}
+nav li {
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  nav {
+    height: 81px;
+    padding: 0px 40px;
+  }
+  .logo {
+    height: 56px;
+  }
+  nav ul {
+    gap: 65px;
+  }
+}
+
+@media (max-width: 744px) {
+  nav {
+    height: 64px;
+    padding: 0px 40px;
+  }
+  .logo {
+    height: 48px;
+  }
+  nav ul {
+    gap: 65px;
+  }
+  nav li {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 501px) {
+  nav {
+    height: 56px;
+    padding: 0px 40px;
+  }
+  .logo {
+    height: 48px;
+  }
+  nav ul {
+    gap: 48px;
+  }
+  nav li {
+    font-size: 24px;
+  }
+}
