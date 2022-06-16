@@ -7,10 +7,10 @@ function Nav() {
       <div className={classes.logo}></div>
       <ul>
         <li>
-          <i class="fas fa-shopping-cart"></i>
+          <i className="fas fa-shopping-cart"></i>
         </li>
         <li>
-          <i class="fas fa-user"></i>
+          <i className="fas fa-user"></i>
         </li>
       </ul>
     </nav>

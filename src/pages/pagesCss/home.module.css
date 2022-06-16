@@ -1,6 +1,6 @@
 .Home_page {
   width: 100%;
-  min-height: 150vh;
+
   background-color: rgb(255, 255, 255);
   padding: 0px 80px;
   margin: 0;
@@ -45,7 +45,6 @@
   border-radius: 50px;
   position: relative;
   overflow: hidden;
-  margin-bottom: 116px;
 }
 .big_deal_img {
   background-image: url(../../Images/Group\ 62.png);
@@ -115,6 +114,7 @@
 @media (max-width: 1000px) {
   .deal_img {
     height: 301px;
+    margin-bottom: 0px;
   }
   .big_deal_img {
     width: 220px;
@@ -159,6 +159,7 @@
 @media (max-width: 605px) {
   .deal_img {
     height: 225px;
+    margin-bottom: 0;
   }
   .big_deal_img {
     height: 100px;

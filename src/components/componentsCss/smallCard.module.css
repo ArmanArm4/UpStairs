@@ -4,7 +4,7 @@
   border-radius: 18px;
   border: 1px solid #acacac;
   position: relative;
-  background-image: url(../../Images/iphone-13-mini-2021_edited_edited.jpg);
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/online-shop-upstairs.appspot.com/o/Apple_iPhone_11.jpg?alt=media&token=6c9005ff-4ad0-4752-8c33-1b22ffd464e3");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -14,4 +14,95 @@
   position: absolute;
   right: 12px;
   top: 12px;
+}
+.small_card h4,
+h5 {
+  margin: 0;
+}
+.small_card h4 {
+  font-size: 24px;
+  font-weight: 300;
+}
+.small_card h5 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media (max-width: 1334px) {
+  .small_card div {
+    width: 310px;
+    height: 210px;
+  }
+}
+@media (max-width: 1200px) {
+  .small_card div {
+    width: 258px;
+    height: 190px;
+  }
+  .small_card h4 {
+    font-size: 20px;
+  }
+  .small_card h5 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1060px) {
+  .small_card div {
+    width: 218px;
+    height: 160px;
+  }
+  .small_card h4 {
+    font-size: 18px;
+  }
+  .small_card h5 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 922px) {
+  .small_card div {
+    width: 180px;
+    height: 132px;
+  }
+  .small_card h4 {
+    font-size: 16px;
+  }
+  .small_card h5 {
+    font-size: 14px;
+  }
+  .small_card i {
+    font-size: 22px;
+  }
+}
+@media (max-width: 744px) {
+  .small_card div {
+    width: 238px;
+    height: 174.88px;
+  }
+  .small_card i {
+    font-size: 28px;
+  }
+}
+@media (max-width: 637px) {
+  .small_card div {
+    width: 185px;
+    height: 136px;
+  }
+}
+@media (max-width: 501px) {
+  .small_card div {
+    width: 146px;
+    height: 105px;
+    border-radius: 8px;
+  }
+  .small_card i {
+    font-size: 20px;
+    right: 8px;
+    top: 8px;
+  }
+  .small_card h4 {
+    font-size: 14px;
+  }
+  .small_card h5 {
+    font-size: 12px;
+  }
 }

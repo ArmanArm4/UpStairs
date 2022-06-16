@@ -1,0 +1,84 @@
+.big_card > div {
+  width: 100%;
+  aspect-ratio: 307/200;
+  border-radius: 18px;
+  border: 1px solid #acacac;
+  position: relative;
+  background-image: url(../../Images/iphone-13-mini-2021_edited_edited.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.big_card {
+  width: 100%;
+}
+.big_card i {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  color: #ffd300;
+}
+
+.big_card h4,
+h5 {
+  margin: 0;
+}
+.big_card h4 {
+  font-size: 24px;
+  font-weight: 300;
+}
+.big_card h5 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .big_card div {
+    aspect-ratio: 307/222;
+    border-radius: 16px;
+  }
+  .big_card h4 {
+    font-size: 20px;
+  }
+  .big_card h5 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1060px) {
+  .big_card h4 {
+    font-size: 18px;
+  }
+  .big_card h5 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 922px) {
+  .big_card h4 {
+    font-size: 16px;
+  }
+  .big_card h5 {
+    font-size: 14px;
+  }
+  .big_card i {
+    font-size: 22px;
+  }
+}
+@media (max-width: 744px) {
+  .big_card div {
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 501px) {
+  .big_card h4 {
+    font-size: 14px;
+  }
+  .big_card h5 {
+    font-size: 14px;
+  }
+  .big_card i {
+    font-size: 20px;
+    right: 8px;
+    top: 8px;
+  }
+}

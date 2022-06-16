@@ -1,0 +1,11 @@
+.big_cards {
+  display: flex;
+  gap: 4%;
+  width: 100%;
+}
+.first_card {
+  display: flex;
+  gap: 4%;
+  width: 100%;
+  margin-bottom: 24px;
+}

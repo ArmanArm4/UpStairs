@@ -2,12 +2,14 @@ import React from "react";
 import classes from "./pagesCss/home.module.css";
 import SectionText from "../components/SectionText.js";
 import Phones from "../components/Phones.js";
+import Tablets from "../components/Tablets.js";
+import BestSellers from "../components/BestSellers.js";
 
 function Home() {
   return (
     <section className={classes.Home_page}>
       <div className={classes.search_bar}>
-        <i class="fas fa-search"></i>
+        <i className="fas fa-search"></i>
         <input placeholder="Search..." type="text" />
       </div>
 
@@ -16,8 +18,12 @@ function Home() {
         <div className={classes.big_deal_img}></div>
         <div className={classes.thumbs_up_img}></div>
       </div>
-
+      <SectionText value={"Phones"}></SectionText>
       <Phones></Phones>
+      <SectionText value={"Best sellers"}></SectionText>
+      <BestSellers></BestSellers>
+      <SectionText value={"Tablets"}></SectionText>
+      <Tablets></Tablets>
     </section>
   );
 }
