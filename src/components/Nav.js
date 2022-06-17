@@ -1,13 +1,18 @@
 import React from "react";
 import classes from "./componentsCss/nav.module.css";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
     <nav>
-      <div className={classes.logo}></div>
+      <Link to={"/"}>
+        <div className={classes.logo}></div>
+      </Link>
       <ul>
         <li>
-          <i className="fas fa-shopping-cart"></i>
+          <Link to={"/user/shoping-cart"} className={"white"}>
+            <i className="fas fa-shopping-cart"></i>
+          </Link>
         </li>
         <li>
           <i className="fas fa-user"></i>

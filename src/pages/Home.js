@@ -12,7 +12,6 @@ function Home() {
         <i className="fas fa-search"></i>
         <input placeholder="Search..." type="text" />
       </div>
-
       <SectionText value={"Deal of the day"}></SectionText>
       <div className={classes.deal_img}>
         <div className={classes.big_deal_img}></div>

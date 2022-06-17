@@ -40,6 +40,13 @@ footer p {
 footer {
   margin-top: 116px;
 }
+.white {
+  color: white;
+}
+
+.bg {
+  height: 200vh;
+}
 
 @media (max-width: 1200px) {
   footer {

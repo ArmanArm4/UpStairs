@@ -1,0 +1,84 @@
+.gray {
+  background-color: #d9d9d9;
+}
+.black {
+  background-color: #2d2d2d;
+}
+.gold {
+  background-color: #cca116;
+}
+.red {
+  background-color: #dd3333;
+}
+.device_page {
+  padding: 0 80px;
+  padding-top: 64px;
+}
+.device_info {
+  width: 100%;
+  aspect-ratio: 1350/478;
+  display: flex;
+  gap: 48px;
+}
+.device_img {
+  width: 50%;
+  border: 1px solid #acacac;
+  border-radius: 18px;
+  background-image: url("../../Images/iphone-13-mini-2021_edited_edited.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.device_information {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.device_information h3,
+.device_information h5 {
+  margin: 0;
+  padding: 0;
+}
+.device_information h3 {
+  font-weight: 500;
+  font-size: 36px;
+}
+.device_information h5 {
+  margin-top: 17px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 300;
+}
+.filter {
+}
+.filter .colors {
+  display: flex;
+  gap: 16px;
+}
+.filter .colors div {
+  width: 67px;
+  height: 69px;
+  border-radius: 9px;
+}
+.filter p {
+  margin: 17px 0;
+  padding: 0;
+  font-size: 32px;
+  font-weight: 400;
+}
+.memory_btns {
+  display: flex;
+  gap: 18px;
+}
+.memory_btn {
+  width: 128px;
+  height: 66px;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  font-size: 20px;
+  font-weight: 400;
+}
