@@ -11,7 +11,7 @@
   background-color: #dd3333;
 }
 .device_page {
-  padding: 0 80px;
+  padding: 0 40px;
   padding-top: 64px;
 }
 .device_info {
@@ -45,13 +45,12 @@
   font-size: 36px;
 }
 .device_information h5 {
-  margin-top: 17px;
+  margin-top: 16px;
   line-height: 34px;
   font-size: 24px;
   font-weight: 300;
 }
-.filter {
-}
+
 .filter .colors {
   display: flex;
   gap: 16px;
@@ -81,4 +80,165 @@
   border-radius: 9px;
   font-size: 20px;
   font-weight: 400;
+}
+@media (max-width: 1500px) {
+  .device_information h3 {
+    font-size: 32px;
+  }
+  .device_information h5 {
+    margin-top: 8px;
+    line-height: 28px;
+    font-size: 20px;
+  }
+  .filter p {
+    margin: 12px 0;
+    font-size: 24px;
+  }
+  .memory_btn {
+    width: 96px;
+    height: 48px;
+    font-size: 16px;
+  }
+  .filter .colors div {
+    width: 48px;
+    height: 48px;
+    border-radius: 9px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .device_page {
+    padding: 0 40px;
+    padding-top: 64px;
+  }
+  .device_info {
+    gap: 32px;
+  }
+}
+@media (max-width: 1050px) {
+  .device_information h3 {
+    font-size: 22px;
+  }
+  .device_information h5 {
+    margin-top: 4px;
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .filter p {
+    margin: 4px 0;
+    font-size: 18px;
+  }
+  .device_page {
+    padding-top: 40px;
+  }
+
+  .memory_btns {
+    gap: 8px;
+  }
+  .filter .colors {
+    gap: 8px;
+  }
+  .filter .colors div {
+    width: 40px;
+    height: 40px;
+  }
+  .device_info {
+    gap: 20px;
+  }
+}
+@media (max-width: 780px) {
+  .device_information h3 {
+    font-size: 20px;
+  }
+  .device_information h5 {
+    margin-top: 4px;
+    line-height: 16px;
+    font-size: 14px;
+  }
+  .filter p {
+    margin: 4px 0;
+    font-size: 18px;
+  }
+  .memory_btn {
+    width: 66px;
+    height: 34px;
+    font-size: 14px;
+  }
+  .filter .colors div {
+    width: 40px;
+    height: 40px;
+  }
+  .memory_btns {
+    gap: 8px;
+  }
+  .filter .colors {
+    gap: 8px;
+  }
+  .filter .colors div {
+    width: 34px;
+    height: 34px;
+  }
+  .device_info {
+    gap: 20px;
+  }
+  .device_img {
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 660px) {
+  .device_info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .device_img {
+    width: 100%;
+    aspect-ratio: 366/238;
+    border-radius: 12px;
+  }
+  .device_information {
+    width: 100%;
+    display: flex;
+  }
+  .device_information h3,
+  .device_information h5 {
+    margin: 0;
+    padding: 0;
+  }
+  .device_information h3 {
+    font-weight: 500;
+    font-size: 22px;
+  }
+  .device_information h5 {
+    margin-top: 9px;
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  .filter .colors {
+    gap: 12px;
+  }
+  .filter .colors div {
+    width: 38px;
+    height: 40px;
+    border-radius: 9px;
+  }
+  .filter p {
+    margin-top: 22px;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .memory_btns {
+    gap: 14px;
+  }
+  .memory_btn {
+    width: 85px;
+    height: 40px;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 400;
+  }
 }

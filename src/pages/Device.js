@@ -1,8 +1,13 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { useEffect, useContext, useState } from "react";
 import ProductsContext from "../context/ProductsContext";
-import { useParams } from "react-router-dom";
+
 import classes from "./pagesCss/device.module.css";
+import BuyNowToCartBtns from "../components/BuyNowToCartBtns.js";
+import Phones from "../components/Phones";
+import BestSellers from "../components/BestSellers";
+import Tablets from "../components/Tablets";
+import SectionText from "../components/SectionText";
 
 function Device() {
   const [selectedDevice, setSelectedDevice] = useState({});
@@ -51,6 +56,13 @@ function Device() {
           </div>
         </div>
       </div>
+      <BuyNowToCartBtns></BuyNowToCartBtns>
+      <SectionText value={"Phones"}></SectionText>
+      <Phones></Phones>
+      <SectionText value={"Best sellers"}></SectionText>
+      <BestSellers></BestSellers>
+      <SectionText value={"Tablets"}></SectionText>
+      <Tablets></Tablets>
     </div>
   );
 }
