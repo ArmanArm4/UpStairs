@@ -16,8 +16,13 @@
   top: 12px;
 }
 .small_card h4,
-h5 {
+.small_card h5 {
   margin: 0;
+  color: #17507f;
+  text-decoration: underline;
+}
+.small_card .links:hover {
+  color: #2196f3;
 }
 .small_card h4 {
   font-size: 24px;

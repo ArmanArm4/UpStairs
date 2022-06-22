@@ -27,8 +27,11 @@ footer {
   color: white;
   font-size: 24px;
   margin-top: 64px;
-  width: 100%;
   height: 84px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 footer p {
   display: block;
@@ -47,10 +50,24 @@ footer {
 .bg {
   height: 200vh;
 }
-
+.activeBtn {
+  outline: 4px solid #360ccdbd;
+}
+.gray {
+  background-color: #d9d9d9;
+}
+.black {
+  background-color: #2d2d2d;
+}
+.gold {
+  background-color: #cca116;
+}
+.red {
+  background-color: #dd3333;
+}
 @media (max-width: 1200px) {
   footer {
-    margin-top: 64px;
+    margin-top: 40px;
   }
   footer p {
     font-size: 20px;

@@ -1,17 +1,5 @@
-.gray {
-  background-color: #d9d9d9;
-}
-.black {
-  background-color: #2d2d2d;
-}
-.gold {
-  background-color: #cca116;
-}
-.red {
-  background-color: #dd3333;
-}
 .device_page {
-  padding: 0 40px;
+  padding: 0 80px;
   padding-top: 64px;
 }
 .device_info {
@@ -24,10 +12,10 @@
   width: 50%;
   border: 1px solid #acacac;
   border-radius: 18px;
-  background-image: url("../../Images/iphone-13-mini-2021_edited_edited.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  padding: 100px;
 }
 .device_information {
   width: 50%;
@@ -59,7 +47,9 @@
   width: 67px;
   height: 69px;
   border-radius: 9px;
+  cursor: pointer;
 }
+
 .filter p {
   margin: 17px 0;
   padding: 0;
@@ -70,7 +60,7 @@
   display: flex;
   gap: 18px;
 }
-.memory_btn {
+.memory_btns > div {
   width: 128px;
   height: 66px;
   background-color: #d9d9d9;
@@ -80,6 +70,7 @@
   border-radius: 9px;
   font-size: 20px;
   font-weight: 400;
+  cursor: pointer;
 }
 @media (max-width: 1500px) {
   .device_information h3 {
@@ -94,7 +85,7 @@
     margin: 12px 0;
     font-size: 24px;
   }
-  .memory_btn {
+  .memory_btns > div {
     width: 96px;
     height: 48px;
     font-size: 16px;
@@ -159,7 +150,7 @@
     margin: 4px 0;
     font-size: 18px;
   }
-  .memory_btn {
+  .memory_btns > div {
     width: 66px;
     height: 34px;
     font-size: 14px;
@@ -234,11 +225,26 @@
   .memory_btns {
     gap: 14px;
   }
-  .memory_btn {
+  .memory_btns > div {
     width: 85px;
     height: 40px;
     border-radius: 9px;
     font-size: 16px;
     font-weight: 400;
+  }
+}
+@media (max-width: 432px) {
+  .device_page {
+    padding: 20px 20px;
+  }
+}
+@media (max-width: 387px) {
+  .device_page {
+    padding: 20px 35px;
+  }
+}
+@media (max-width: 327px) {
+  .device_page {
+    padding: 10px 10px;
   }
 }

@@ -25,10 +25,10 @@ function Tablets() {
           dragConstraints={{ right: 0, left: width }}
           className={classes.inner_carousel}
         >
-          {tablets.map(phone => {
+          {tablets.map(tablet => {
             return (
-              <motion.div key={phone.id} className={classes.item}>
-                <SmallCard device={phone}></SmallCard>
+              <motion.div key={tablet.id} className={classes.item}>
+                <SmallCard device={tablet}></SmallCard>
               </motion.div>
             );
           })}

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+
+.parentElement {
+  padding: 0px 80px;
+}
+.cart_items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.emptyShoppingCart {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.emptyShoppingCart h4 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-family: "Fredericka the Great", cursive;
+  color: #360ccd;
+}
+.emptyShoppingCart .FamilyPng {
+  max-width: 100%;
+  background-image: url(../../Images/Group\ 112.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 556px;
+
+  aspect-ratio: 556/338;
+}
+.btn {
+  max-width: 100%;
+  width: 540px;
+}
+.emptyShoppingCart button {
+  cursor: pointer;
+
+  width: 100%;
+  /* width: 540px; */
+  max-width: 100%;
+  margin-top: 40px;
+  height: 48px;
+  font-size: 18px;
+  border-radius: 12px;
+  color: white;
+  background-color: #360ccd;
+  border: none;
+}
+.emptyShoppingCart p {
+  max-width: 100%;
+  width: 590px;
+  line-height: 145.5%;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  margin: 20;
+}
+@media (max-width: 1200px) {
+  .parentElement {
+    padding: 0px 40px;
+  }
+}
+@media (max-width: 501px) {
+  .emptyShoppingCart h4 {
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-family: "Fredericka the Great", cursive;
+    color: #360ccd;
+  }
+
+  .emptyShoppingCart button {
+    margin-top: 40px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  .emptyShoppingCart p {
+    max-width: 100%;
+    width: 590px;
+    line-height: 145.5%;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+@media (max-width: 392px) {
+  .parentElement {
+    padding: 0px 20px;
+  }
+}
+@media (max-width: 332px) {
+  .parentElement {
+    padding: 10px 10px;
+  }
+  .emptyShoppingCart {
+    margin-top: 10px;
+  }
+  .emptyShoppingCart button {
+    margin-top: 10px;
+  }
+}

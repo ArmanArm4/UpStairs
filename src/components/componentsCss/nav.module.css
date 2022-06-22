@@ -1,3 +1,13 @@
+.nav_bg {
+  background-color: #360ccd;
+  height: 90px;
+  z-index: -10;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
 nav {
   background-color: #360ccd;
   color: #fefff3;
@@ -6,6 +16,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0px 80px;
+  border-radius: 0px 0px 40px 40px;
 }
 .logo {
   background-image: url(../../Images/Logo.png);
@@ -27,6 +38,9 @@ nav li {
     height: 81px;
     padding: 0px 40px;
   }
+  .nav_bg {
+    height: 81px;
+  }
   .logo {
     height: 56px;
   }
@@ -36,9 +50,13 @@ nav li {
 }
 
 @media (max-width: 744px) {
+  .nav_bg {
+    height: 64px;
+  }
   nav {
     height: 64px;
     padding: 0px 40px;
+    border-radius: 0px 0px 20px 20px;
   }
   .logo {
     height: 48px;
@@ -52,6 +70,9 @@ nav li {
 }
 
 @media (max-width: 501px) {
+  .nav_bg {
+    height: 56px;
+  }
   nav {
     height: 56px;
     padding: 0px 40px;

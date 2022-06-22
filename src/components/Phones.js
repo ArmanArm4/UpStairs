@@ -8,10 +8,10 @@ function Phones() {
   const [width, setWidth] = useState(0);
   const carousel = useRef();
 
-  const { phones, tablets, devices } = useContext(ProductsContext);
+  const { phones } = useContext(ProductsContext);
+
   useEffect(() => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-    console.log(carousel.current.scrollWidth);
   }, [phones]);
 
   return (
