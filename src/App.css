@@ -51,7 +51,7 @@ footer {
   height: 200vh;
 }
 .activeBtn {
-  outline: 4px solid #360ccdbd;
+  border: 2px solid #360ccdbd;
 }
 .gray {
   background-color: #d9d9d9;

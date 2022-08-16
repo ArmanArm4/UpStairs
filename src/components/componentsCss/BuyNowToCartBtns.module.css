@@ -47,11 +47,19 @@ button:active {
     }
   } */
 
-@media (max-width: 1050px) {
+@media (max-width: 1200px) {
   .text {
     font-size: 20px;
   }
   .btns {
-    margin-top: 64px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 501px) {
+  .text {
+    font-size: 20px;
+  }
+  .btns {
+    margin-top: 20px;
   }
 }

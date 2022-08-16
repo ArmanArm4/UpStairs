@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import classes from "./componentsCss/nav.module.css";
 import { Link } from "react-router-dom";
+import UserIconWindow from "./UserIconWindow.js";
 
 function Nav() {
+  const [profileWindowIsOpen, setprofileWindowIsOpen] = useState(false);
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    setprofileWindowIsOpen(false);
+  }, [pathname]);
+
+  const profileWindowHandler = () => {
+    setprofileWindowIsOpen(previousState => !previousState);
+  };
   return (
     <>
       <div className={classes.nav_bg}></div>
@@ -17,7 +30,12 @@ function Nav() {
             </Link>
           </li>
           <li>
-            <i className="fas fa-user"></i>
+            <i onClick={profileWindowHandler} className="fas fa-user"></i>
+            {profileWindowIsOpen && (
+              <UserIconWindow
+                profileWindowHandler={profileWindowHandler}
+              ></UserIconWindow>
+            )}
           </li>
         </ul>
       </nav>

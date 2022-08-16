@@ -5,6 +5,9 @@ import classes from "./pagesCss/shopingCart.module.css";
 import SectionText from "../components/SectionText.js";
 import CartItem from "../components/shopingCartComponents/CartItem.js";
 import Checkout from "../components/shopingCartComponents/Checkout";
+import Phones from "../components/Phones";
+import BestSellers from "../components/BestSellers";
+import Tablets from "../components/Tablets";
 
 function ShoppingCart() {
   const { pathname } = useLocation();
@@ -63,6 +66,12 @@ function ShoppingCart() {
           </div>
         </>
       )}
+      <SectionText value={"Phones"}></SectionText>
+      <Phones></Phones>
+      <SectionText value={"Best sellers"}></SectionText>
+      <BestSellers></BestSellers>
+      <SectionText value={"Tablets"}></SectionText>
+      <Tablets></Tablets>
     </section>
   );
 }

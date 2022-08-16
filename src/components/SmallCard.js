@@ -10,7 +10,7 @@ function SmallCard({ device }) {
           backgroundImage: `url(${device.image})`,
         }}
       >
-        <i className="far fa-heart"></i>
+        {/* <i className="far fa-heart"></i> */}
       </div>
       <Link className="links" to={`/device/${device.id}`}>
         <h4>{device.name}</h4>

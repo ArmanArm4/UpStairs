@@ -1,0 +1,25 @@
+.result {
+  border-bottom: 1px solid #d4d4d4;
+  border-inline: 1px solid #d4d4d4;
+  background-color: white;
+  height: 48px;
+  font-size: 16px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding-left: 38px;
+  cursor: pointer;
+  width: 650px;
+  max-width: 100%;
+  margin: auto;
+
+  z-index: 20;
+}
+.result:hover {
+  background-color: #dbdafd;
+}
+
+.result p {
+  margin: 0;
+  padding: 0;
+}

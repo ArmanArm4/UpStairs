@@ -1,0 +1,90 @@
+.parent {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 21px;
+  z-index: 20;
+}
+.parent input {
+  width: 650px;
+  height: 48px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #d4d4d4;
+  padding-left: 38px;
+}
+.searchBar {
+  position: relative;
+  width: 650px;
+  margin: auto;
+}
+.parent i {
+  position: absolute;
+  font-size: 18px;
+  top: 16px;
+  left: 12px;
+  color: #757575;
+}
+
+.parent input:focus {
+  outline: 2px solid #ffffff;
+}
+.results {
+  position: absolute;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+.notEmpty input {
+  border-radius: 6px 6px 0px 0px;
+}
+@media (max-width: 1201px) {
+  .parent {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-right: 0;
+    top: 0px;
+  }
+
+  .parent input {
+    max-width: 100%;
+  }
+  .searchBar {
+    max-width: 100%;
+  }
+
+  .parent input:focus {
+    outline: none;
+    border: 1px solid #360ccd;
+  }
+}
+@media (max-width: 744px) {
+  /* .parent input {
+    height: 40px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #d4d4d4;
+    padding-left: 38px;
+    margin: 0;
+  }
+  .searchBar {
+    height: 40px;
+  } */
+  .parent {
+    margin-top: 24px;
+  }
+  .results {
+    top: 50px;
+  }
+}
+@media (max-width: 501px) {
+  .parent input {
+  }
+}

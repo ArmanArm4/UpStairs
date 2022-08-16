@@ -5,15 +5,16 @@
   margin: 0;
   padding-top: 0px;
 }
-.search_bar {
+/* .search_bar {
   margin: auto;
   position: absolute;
   top: 21px;
   left: 50%;
   transform: translate(-50%, 0%);
   width: 650px;
-  max-width: calc(100vw - 160px);
-  height: 48px;
+  max-width: calc(100vw);
+
+  z-index: 2;
 }
 .search_bar input {
   max-width: calc(100vw - 176px);
@@ -35,7 +36,7 @@
   transform: translate(0%, -45%);
   font-size: 18px;
   color: #686b6f;
-}
+} */
 
 .deal_img {
   width: 100%;
@@ -86,7 +87,7 @@
   }
 }
 @media (max-width: 1200px) {
-  .search_bar {
+  /* .search_bar {
     margin: auto;
     position: relative;
     top: 0px;
@@ -96,7 +97,7 @@
   }
   .search_bar input:focus {
     outline: 2px solid #360ccd;
-  }
+  } */
   .deal_img {
     height: 351px;
   }
@@ -134,13 +135,13 @@
     margin: 0;
     padding-top: 0px;
   }
-  .search_bar {
-    max-width: calc(100vw - 80px);
+  /* .search_bar {
+    max-width: calc(100vw - 60px);
     height: 48px;
   }
   .search_bar input {
     max-width: calc(100vw - 98px);
-  }
+  } */
   .deal_img {
     height: 275px;
   }
@@ -178,13 +179,13 @@
     margin: 0;
     padding-top: 0px;
   }
-  .search_bar {
+  /* .search_bar {
     max-width: calc(100vw - 48px);
     height: 48px;
   }
   .search_bar input {
     max-width: calc(100vw - 65px);
-  }
+  } */
 }
 @media (max-width: 432px) {
   .Home_page {

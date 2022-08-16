@@ -1,11 +1,13 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useContext, useState } from "react";
+import ProductsContext from "../context/ProductsContext";
 import classes from "./pagesCss/home.module.css";
 import SectionText from "../components/SectionText.js";
 import Phones from "../components/Phones.js";
 import Tablets from "../components/Tablets.js";
 import BestSellers from "../components/BestSellers.js";
+import SearchBar from "../components/SearchBar/SearchBar";
 
 function Home() {
   const { pathname } = useLocation();
@@ -14,12 +16,30 @@ function Home() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  const { devices } = useContext(ProductsContext);
+
+  const [filteredDevices, setfilteredDevices] = useState([]);
+
+  const searchBarHandler = e => {
+    setfilteredDevices([]);
+
+    if (e) {
+      for (let i = 0; i < devices.length; i++) {
+        if (devices[i].name.toLowerCase().includes(e.toLowerCase())) {
+          // filteredDevices.push(devices[i]);
+          setfilteredDevices(previousState => [devices[i], ...previousState]);
+        }
+      }
+    }
+  };
+  // console.log(filteredDevices);
   return (
     <section className={classes.Home_page}>
-      <div className={classes.search_bar}>
-        <i className="fas fa-search"></i>
-        <input placeholder="Search..." type="text" />
-      </div>
+      <SearchBar
+        searchBarHandler={searchBarHandler}
+        filteredDevices={filteredDevices}
+      ></SearchBar>
+
       <SectionText value={"Deal of the day"}></SectionText>
       <div className={classes.deal_img}>
         <div className={classes.big_deal_img}></div>

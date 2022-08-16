@@ -26,6 +26,9 @@ function Device() {
   const [selectedDevice, setSelectedDevice] = useState({});
 
   const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   useEffect(() => {
     if (selectedDevice.id) {
@@ -35,9 +38,6 @@ function Device() {
     // console.log(selectedDevice.id, activeMemory[0]);
   }, [activeMemory]);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
   useEffect(() => {
     if (devices.length > 10) {
       setSelectedDevice(devices.filter(device => device.id == links)[0]);

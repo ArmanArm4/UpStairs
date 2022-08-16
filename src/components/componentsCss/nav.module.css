@@ -1,7 +1,7 @@
 .nav_bg {
   background-color: #360ccd;
   height: 90px;
-  z-index: -10;
+  z-index: -1;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -17,6 +17,12 @@ nav {
   align-items: center;
   padding: 0px 80px;
   border-radius: 0px 0px 40px 40px;
+}
+nav * {
+  z-index: 81;
+}
+nav li {
+  position: relative;
 }
 .logo {
   background-image: url(../../Images/Logo.png);
@@ -68,14 +74,18 @@ nav li {
     font-size: 28px;
   }
 }
-
+@media (max-width: 522px) {
+  nav li {
+    position: static;
+  }
+}
 @media (max-width: 501px) {
   .nav_bg {
     height: 56px;
   }
   nav {
     height: 56px;
-    padding: 0px 40px;
+    padding: 0px 24px;
   }
   .logo {
     height: 48px;

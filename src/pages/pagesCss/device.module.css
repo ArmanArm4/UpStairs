@@ -189,7 +189,10 @@
     width: 100%;
     aspect-ratio: 366/238;
     border-radius: 12px;
+
+    border: 0px solid #acacac;
   }
+
   .device_information {
     width: 100%;
     display: flex;
@@ -233,9 +236,9 @@
     font-weight: 400;
   }
 }
-@media (max-width: 432px) {
+@media (max-width: 500px) {
   .device_page {
-    padding: 20px 20px;
+    padding: 20px 24px;
   }
 }
 @media (max-width: 387px) {

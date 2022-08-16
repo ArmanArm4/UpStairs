@@ -90,14 +90,17 @@
     text-align: center;
   }
 }
-@media (max-width: 392px) {
+@media (max-width: 501px) {
   .parentElement {
-    padding: 0px 20px;
+    padding: 0px 24px;
   }
 }
-@media (max-width: 332px) {
+@media (max-width: 338px) {
   .parentElement {
-    padding: 10px 10px;
+    padding: 10px 24px;
+  }
+  .emptyShoppingCart h4 {
+    font-size: 18px;
   }
   .emptyShoppingCart {
     margin-top: 10px;
