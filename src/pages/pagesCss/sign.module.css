@@ -1,0 +1,151 @@
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  background-image: url("../../Images/bg.png");
+}
+.main section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 810px;
+  flex-direction: column;
+}
+.main section.forgotPasswordPage {
+  min-height: 500px;
+}
+.main section.signIn {
+  min-height: 668px;
+}
+.main form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 722px;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.main h5 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 32px;
+}
+.main label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.main input,
+.main button {
+  height: 48px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 16px;
+  margin-bottom: 32px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+.main button {
+  background-color: #3012d2;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+.link {
+  margin: auto;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+}
+.or {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin: 32px 0px;
+  position: relative;
+}
+.or div {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  padding: 0px 40px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(145, 145, 145);
+}
+.forgotPassword {
+  width: 722px;
+  background-color: rgb(255, 255, 255);
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 16px;
+}
+.error {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-family: "Inter";
+  color: red;
+}
+.success {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-family: "Inter";
+  color: rgb(14, 210, 14);
+}
+@media (max-width: 776px) {
+  .main form {
+    width: 100%;
+    border-radius: 0;
+  }
+  .forgotPassword {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .main h5 {
+    font-size: 28px;
+  }
+  .main form {
+    padding: 32px 16px;
+  }
+}

@@ -1,7 +1,21 @@
 import React from "react";
 import classes from "../componentsCss/BuyNowToCartBtns.module.css";
+import { useAuthStatus } from "../../hooks/useAuthStatus";
+import { useNavigate } from "react-router-dom";
 
 function Checkout({ wantedItems }) {
+  // check if user is signed in
+  const { signedIn } = useAuthStatus();
+
+  const navigate = useNavigate();
+
+  const toSignIn = () => {
+    navigate("/sign-in");
+  };
+  const checkout = () => {
+    alert("I sell websites not phones");
+  };
+
   let total = 0;
   let additional = 0;
   for (let i = 0; i < wantedItems.length; i++) {
@@ -26,7 +40,12 @@ function Checkout({ wantedItems }) {
         <p>Total</p>
         <p>${total.toFixed(2)}</p>
       </div>
-      <button className={classes.buy_now}>Checkout</button>
+      <button
+        className={classes.buy_now}
+        onClick={signedIn ? checkout : toSignIn}
+      >
+        Checkout
+      </button>
     </div>
   );
 }

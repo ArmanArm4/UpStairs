@@ -14,7 +14,7 @@ function Nav() {
   }, [pathname]);
 
   const profileWindowHandler = () => {
-    setprofileWindowIsOpen(previousState => !previousState);
+    setprofileWindowIsOpen((previousState) => !previousState);
   };
   return (
     <>
@@ -25,7 +25,7 @@ function Nav() {
         </Link>
         <ul>
           <li>
-            <Link to={"/user/shoping-cart"} className={"white"}>
+            <Link to={`/user/shoping-cart`} className={"white"}>
               <i className="fas fa-shopping-cart"></i>
             </Link>
           </li>

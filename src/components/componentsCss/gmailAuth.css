@@ -1,0 +1,17 @@
+.Gmail_link {
+  margin: auto;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  display: flex;
+}
+.gmail-Icon {
+  height: 23px;
+  aspect-ratio: 37.54/23;
+  background-image: url("../../Images/gmail_icon.png");
+  margin-right: 8px;
+}
