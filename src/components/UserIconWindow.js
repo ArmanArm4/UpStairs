@@ -36,14 +36,14 @@ function UserIconWindow({ profileWindowHandler }) {
         )}
         {signedIn && (
           <>
-            <div className={classes.link}>
+            <div className={`${classes.link} ${classes.disabled}`}>
               <i className="fas fa-heart"></i>Wish list
             </div>
             <div className={`${classes.link} ${classes.disabled}`}>
               <i className="fas fa-user"></i>Edit profile
             </div>
             <div className={classes.link} onClick={LogOutHandler}>
-              <i className="fas fa-cog"></i>LogOut
+              <i className="fas fa-sign-out-alt"></i>LogOut
             </div>
           </>
         )}

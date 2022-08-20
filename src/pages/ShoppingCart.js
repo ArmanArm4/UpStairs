@@ -1,6 +1,5 @@
 import { useLocation, Link, useNavigate } from "react-router-dom";
 import { useEffect, useState, useContext } from "react";
-import { useAuthStatus } from "../hooks/useAuthStatus";
 import ProductsContext from "../context/ProductsContext";
 import classes from "./pagesCss/shopingCart.module.css";
 import SectionText from "../components/SectionText.js";

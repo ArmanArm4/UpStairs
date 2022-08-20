@@ -1,12 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
-import PropTypes from "prop-types";
 import classes from "./componentsCss/smallCard.module.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { getAuth } from "firebase/auth";
-import { collection, updateDoc, doc } from "firebase/firestore";
+import { updateDoc, doc } from "firebase/firestore";
 import { db } from "../firebase.config";
-import { useAuthStatus } from "../hooks/useAuthStatus";
 import UserAuthContext from "../context/UserAuthContext";
 
 const variants = {

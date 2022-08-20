@@ -11,7 +11,6 @@ import Tablets from "../components/Tablets";
 import SectionText from "../components/SectionText";
 import ColorBtn from "../components/ColorBtn";
 import MemoryBtn from "../components/MemoryBtn.js";
-import { useAuthStatus } from "../hooks/useAuthStatus";
 
 const colors = ["gray", "black", "gold", "red"];
 const memories = [

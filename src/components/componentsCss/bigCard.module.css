@@ -4,10 +4,21 @@
   border-radius: 18px;
   border: 1px solid #acacac;
   position: relative;
-  background-image: url(../../Images/iphone-13-mini-2021_edited_edited.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+}
+.bg_one {
+  background-image: url(../../Images/iphone-11-pro.png);
+}
+.bg_two {
+  background-image: url(../../Images/iphone-xs-max.png);
+}
+.bg_three {
+  background-image: url(../../Images/iphone-12-mini.png);
+}
+.bg_four {
+  background-image: url(../../Images/iphone-11.png);
 }
 .big_card {
   width: 100%;
@@ -34,7 +45,6 @@ h5 {
 
 @media (max-width: 1200px) {
   .big_card div {
-    aspect-ratio: 307/222;
     border-radius: 16px;
   }
   .big_card h4 {

@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer>
       <p>
-        <i className="far fa-copyright"></i>2021 California USA, inc. All rights
+        <i className="far fa-copyright"></i>2022 California USA, inc. All rights
         reserved
       </p>
     </footer>

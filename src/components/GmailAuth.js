@@ -4,7 +4,6 @@ import { db } from "../firebase.config";
 import { useLocation, useNavigate } from "react-router-dom";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { doc, setDoc, getDoc, serverTimestamp } from "firebase/firestore";
-import { toast } from "react-toastify";
 
 function GmailAuth() {
   const navigate = useNavigate();

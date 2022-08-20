@@ -9,14 +9,11 @@ function BuyNowToCartBtns({
   deviceAmountHandler,
   selectedDevice,
 }) {
-  const { cartList, signedIn } = useContext(ProductsContext);
+  const { signedIn } = useContext(ProductsContext);
 
   const navigate = useNavigate();
 
   const addToCart = () => {
-    //   const userRef = doc(db, "users", auth.currentUser.uid);
-
-    // await updateDoc(userRef, { cart: newCart });
     deviceAmountHandler(selectedDevice.id, 1);
     navigate("/");
   };

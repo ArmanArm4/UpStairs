@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useEffect, useContext, useState } from "react";
 import ProductsContext from "../context/ProductsContext";
 import classes from "./pagesCss/home.module.css";
@@ -12,8 +12,6 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
 function Home() {
-  const navigate = useNavigate();
-
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,7 +27,6 @@ function Home() {
     if (e) {
       for (let i = 0; i < devices.length; i++) {
         if (devices[i].name.toLowerCase().includes(e.toLowerCase())) {
-          // filteredDevices.push(devices[i]);
           setfilteredDevices((previousState) => [devices[i], ...previousState]);
         }
       }

@@ -1,5 +1,4 @@
 import { useRef, useEffect, useState, useContext } from "react";
-import { useLocation } from "react-router-dom";
 import UserAuthContext from "../context/UserAuthContext";
 import { getAuth } from "firebase/auth";
 import { motion } from "framer-motion";
